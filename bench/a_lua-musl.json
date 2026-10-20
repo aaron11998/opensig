@@ -1,0 +1,3255 @@
+{
+ "binary": "lua-musl.stripped",
+ "detect": {
+  "runtimes": [
+   "musl"
+  ],
+  "scores": {
+   "glibc": 0,
+   "musl": 2,
+   "go": 0,
+   "rust": 0
+  },
+  "static": true,
+  "stripped": true,
+  "compiler": [
+   "GCC: (Debian 14.2.0-19) 14.2.0"
+  ],
+  "arch": "EM_X86_64"
+ },
+ "packs": [
+  "musl-1.2.5-clang-O2.jsonl.gz",
+  "musl-1.2.5-gcc-O0.jsonl.gz",
+  "musl-1.2.5-gcc-O2.jsonl.gz",
+  "musl-1.2.5-gcc-O3.jsonl.gz"
+ ],
+ "signatures": 7427,
+ "match_seconds": 0.2,
+ "matched": 236,
+ "matches": [
+  {
+   "addr": 4198544,
+   "name": "exit",
+   "aliases": [
+    "exit"
+   ],
+   "lib": "musl-1.2.5-clang-O2",
+   "len": 27,
+   "fixed": 11,
+   "confidence": 0.786,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4247376,
+   "name": "syslog",
+   "aliases": [
+    "syslog"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 143,
+   "fixed": 139,
+   "confidence": 0.5,
+   "callgraph": null,
+   "ambiguous": [
+    "asprintf",
+    "dprintf",
+    "fprintf",
+    "fscanf",
+    "fwprintf",
+    "fwscanf",
+    "sprintf",
+    "sscanf",
+    "swscanf",
+    "syslog"
+   ]
+  },
+  {
+   "addr": 4378752,
+   "name": "isalnum",
+   "aliases": [
+    "isalnum"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 32,
+   "fixed": 32,
+   "confidence": 0.5,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4378800,
+   "name": "iscntrl",
+   "aliases": [
+    "iscntrl"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 18,
+   "fixed": 18,
+   "confidence": 0.281,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4378848,
+   "name": "ispunct",
+   "aliases": [
+    "ispunct"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 38,
+   "fixed": 34,
+   "confidence": 0.966,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4378912,
+   "name": "iswxdigit",
+   "aliases": [
+    "iswxdigit"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 28,
+   "fixed": 28,
+   "confidence": 0.219,
+   "callgraph": null,
+   "ambiguous": [
+    "iswxdigit",
+    "isxdigit"
+   ]
+  },
+  {
+   "addr": 4378960,
+   "name": "tolower",
+   "aliases": [
+    "tolower"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 17,
+   "fixed": 17,
+   "confidence": 0.266,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4379008,
+   "name": "toupper",
+   "aliases": [
+    "toupper"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 17,
+   "fixed": 17,
+   "confidence": 0.266,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4379104,
+   "name": "__init_libc",
+   "aliases": [
+    "__init_libc"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 568,
+   "fixed": 493,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4379680,
+   "name": "libc_start_init",
+   "aliases": [
+    "libc_start_init",
+    "__libc_start_init"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 50,
+   "fixed": 32,
+   "confidence": 0.5,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4379744,
+   "name": "libc_start_main_stage2",
+   "aliases": [
+    "libc_start_main_stage2"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 50,
+   "fixed": 42,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4379808,
+   "name": "__libc_start_main",
+   "aliases": [
+    "__libc_start_main"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 50,
+   "fixed": 42,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4379872,
+   "name": "getenv",
+   "aliases": [
+    "getenv"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 106,
+   "fixed": 91,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4379984,
+   "name": "__errno_location",
+   "aliases": [
+    "__errno_location",
+    "___errno_location"
+   ],
+   "lib": "musl-1.2.5-clang-O2",
+   "len": 14,
+   "fixed": 14,
+   "confidence": 0.219,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4380048,
+   "name": "nl_langinfo",
+   "aliases": [
+    "nl_langinfo",
+    "__nl_langinfo"
+   ],
+   "lib": "musl-1.2.5-clang-O2",
+   "len": 21,
+   "fixed": 17,
+   "confidence": 0.133,
+   "callgraph": null,
+   "ambiguous": [
+    "nl_langinfo",
+    "strerror"
+   ]
+  },
+  {
+   "addr": 4380080,
+   "name": "abort",
+   "aliases": [
+    "abort"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 144,
+   "fixed": 120,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4380240,
+   "name": "libc_exit_fini",
+   "aliases": [
+    "libc_exit_fini",
+    "__libc_exit_fini"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 58,
+   "fixed": 40,
+   "confidence": 0.625,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4380336,
+   "name": "__lctrans_cur",
+   "aliases": [
+    "__lctrans_cur"
+   ],
+   "lib": "musl-1.2.5-clang-O2",
+   "len": 25,
+   "fixed": 21,
+   "confidence": 0.864,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4380384,
+   "name": "setlocale",
+   "aliases": [
+    "setlocale"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 549,
+   "fixed": 457,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4380960,
+   "name": "strcoll",
+   "aliases": [
+    "strcoll"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 21,
+   "fixed": 17,
+   "confidence": 0.133,
+   "callgraph": null,
+   "ambiguous": [
+    "strcoll",
+    "wcscoll"
+   ]
+  },
+  {
+   "addr": 4381008,
+   "name": "get_meta",
+   "aliases": [
+    "get_meta"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 262,
+   "fixed": 254,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4381280,
+   "name": "nontrivial_free",
+   "aliases": [
+    "nontrivial_free"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 981,
+   "fixed": 925,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4382272,
+   "name": "__libc_free",
+   "aliases": [
+    "__libc_free"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 440,
+   "fixed": 400,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4382720,
+   "name": "__malloc_atfork",
+   "aliases": [
+    "__malloc_atfork"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 68,
+   "fixed": 44,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4382816,
+   "name": "__malloc_alloc_meta",
+   "aliases": [
+    "__malloc_alloc_meta"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 860,
+   "fixed": 704,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4383680,
+   "name": "alloc_slot",
+   "aliases": [
+    "alloc_slot"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 2665,
+   "fixed": 2581,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4386352,
+   "name": "__libc_malloc_impl",
+   "aliases": [
+    "__libc_malloc_impl"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 1202,
+   "fixed": 1090,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4387568,
+   "name": "__malloc_allzerop",
+   "aliases": [
+    "__malloc_allzerop"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 406,
+   "fixed": 394,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4388000,
+   "name": "R",
+   "aliases": [
+    "R"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 137,
+   "fixed": 93,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4388144,
+   "name": "acos",
+   "aliases": [
+    "acos"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 443,
+   "fixed": 375,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4388592,
+   "name": "R",
+   "aliases": [
+    "R"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 137,
+   "fixed": 93,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4388736,
+   "name": "asin",
+   "aliases": [
+    "asin"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 409,
+   "fixed": 357,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4389152,
+   "name": "atan2",
+   "aliases": [
+    "atan2"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 488,
+   "fixed": 420,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4389648,
+   "name": "cos",
+   "aliases": [
+    "cos"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 202,
+   "fixed": 162,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4389856,
+   "name": "cosh",
+   "aliases": [
+    "cosh"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 194,
+   "fixed": 158,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4390064,
+   "name": "exp",
+   "aliases": [
+    "exp"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 544,
+   "fixed": 476,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4390608,
+   "name": "expm1",
+   "aliases": [
+    "expm1"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 879,
+   "fixed": 763,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4391488,
+   "name": "fmod",
+   "aliases": [
+    "fmod"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 565,
+   "fixed": 565,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4392064,
+   "name": "frexp",
+   "aliases": [
+    "frexp",
+    "frexp.localalias"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 139,
+   "fixed": 135,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4392224,
+   "name": "log",
+   "aliases": [
+    "log"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 698,
+   "fixed": 602,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4392928,
+   "name": "log10",
+   "aliases": [
+    "log10"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 589,
+   "fixed": 517,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4393520,
+   "name": "log2",
+   "aliases": [
+    "log2"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 746,
+   "fixed": 646,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4394272,
+   "name": "pow",
+   "aliases": [
+    "pow"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 1900,
+   "fixed": 1744,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4396176,
+   "name": "scalbn",
+   "aliases": [
+    "scalbn"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 172,
+   "fixed": 164,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4396352,
+   "name": "sin",
+   "aliases": [
+    "sin"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 215,
+   "fixed": 175,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4396576,
+   "name": "sinh",
+   "aliases": [
+    "sinh"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 238,
+   "fixed": 214,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4396816,
+   "name": "tan",
+   "aliases": [
+    "tan"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 151,
+   "fixed": 131,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4396976,
+   "name": "tanh",
+   "aliases": [
+    "tanh"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 250,
+   "fixed": 206,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4397232,
+   "name": "fabs",
+   "aliases": [
+    "fabs"
+   ],
+   "lib": "musl-1.2.5-clang-O2",
+   "len": 13,
+   "fixed": 13,
+   "confidence": 0.203,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4397280,
+   "name": "mmap",
+   "aliases": [
+    "mmap",
+    "__mmap"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 240,
+   "fixed": 224,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4397520,
+   "name": "mprotect",
+   "aliases": [
+    "mprotect",
+    "__mprotect"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 55,
+   "fixed": 51,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4397600,
+   "name": "munmap",
+   "aliases": [
+    "munmap",
+    "__munmap"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 45,
+   "fixed": 37,
+   "confidence": 0.989,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4397648,
+   "name": "system",
+   "aliases": [
+    "system"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 555,
+   "fixed": 444,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4398208,
+   "name": "waitpid",
+   "aliases": [
+    "waitpid"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 47,
+   "fixed": 39,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4398336,
+   "name": "__block_all_sigs",
+   "aliases": [
+    "__block_all_sigs"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 26,
+   "fixed": 22,
+   "confidence": 0.172,
+   "callgraph": null,
+   "ambiguous": [
+    "__block_all_sigs",
+    "__block_app_sigs"
+   ]
+  },
+  {
+   "addr": 4398368,
+   "name": "__block_all_sigs",
+   "aliases": [
+    "__block_all_sigs"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 26,
+   "fixed": 22,
+   "confidence": 0.172,
+   "callgraph": null,
+   "ambiguous": [
+    "__block_all_sigs",
+    "__block_app_sigs"
+   ]
+  },
+  {
+   "addr": 4398400,
+   "name": "__restore_sigs",
+   "aliases": [
+    "__restore_sigs"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 24,
+   "fixed": 24,
+   "confidence": 0.375,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4398432,
+   "name": "raise",
+   "aliases": [
+    "raise"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 73,
+   "fixed": 61,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4398544,
+   "name": "__libc_sigaction",
+   "aliases": [
+    "__libc_sigaction"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 426,
+   "fixed": 390,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4398976,
+   "name": "sigaction",
+   "aliases": [
+    "sigaction",
+    "__sigaction"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 154,
+   "fixed": 122,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4399136,
+   "name": "sigaddset",
+   "aliases": [
+    "sigaddset"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 57,
+   "fixed": 53,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4399264,
+   "name": "clearerr",
+   "aliases": [
+    "clearerr",
+    "clearerr_unlocked"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 45,
+   "fixed": 37,
+   "confidence": 0.989,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4399328,
+   "name": "fclose",
+   "aliases": [
+    "fclose"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 201,
+   "fixed": 165,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4399536,
+   "name": "feof",
+   "aliases": [
+    "feof",
+    "feof_unlocked",
+    "_IO_feof_unlocked"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 76,
+   "fixed": 68,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4399616,
+   "name": "ferror",
+   "aliases": [
+    "ferror",
+    "ferror_unlocked",
+    "_IO_ferror_unlocked"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 76,
+   "fixed": 68,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4399696,
+   "name": "fflush",
+   "aliases": [
+    "fflush",
+    "fflush_unlocked"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 360,
+   "fixed": 300,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4400064,
+   "name": "fgets",
+   "aliases": [
+    "fgets",
+    "fgets_unlocked"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 478,
+   "fixed": 450,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4400544,
+   "name": "flockfile",
+   "aliases": [
+    "flockfile"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 42,
+   "fixed": 30,
+   "confidence": 0.934,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4400592,
+   "name": "fopen",
+   "aliases": [
+    "fopen"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 219,
+   "fixed": 195,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4400816,
+   "name": "syslog",
+   "aliases": [
+    "syslog"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 143,
+   "fixed": 139,
+   "confidence": 0.5,
+   "callgraph": null,
+   "ambiguous": [
+    "asprintf",
+    "dprintf",
+    "fprintf",
+    "fscanf",
+    "fwprintf",
+    "fwscanf",
+    "sprintf",
+    "sscanf",
+    "swscanf",
+    "syslog"
+   ]
+  },
+  {
+   "addr": 4400960,
+   "name": "locking_putc",
+   "aliases": [
+    "locking_putc"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 178,
+   "fixed": 170,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4401152,
+   "name": "fputc",
+   "aliases": [
+    "fputc"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 96,
+   "fixed": 88,
+   "confidence": 0.5,
+   "callgraph": 1.0,
+   "ambiguous": [
+    "fputc",
+    "putc"
+   ]
+  },
+  {
+   "addr": 4401248,
+   "name": "fputs",
+   "aliases": [
+    "fputs",
+    "fputs_unlocked"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 53,
+   "fixed": 45,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4401312,
+   "name": "fread",
+   "aliases": [
+    "fread",
+    "fread_unlocked"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 298,
+   "fixed": 278,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4401616,
+   "name": "freopen",
+   "aliases": [
+    "freopen"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 351,
+   "fixed": 311,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4401968,
+   "name": "__fseeko_unlocked",
+   "aliases": [
+    "__fseeko_unlocked"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 146,
+   "fixed": 142,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4402128,
+   "name": "fseeko",
+   "aliases": [
+    "fseeko",
+    "__fseeko"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 98,
+   "fixed": 82,
+   "confidence": 0.5,
+   "callgraph": 1.0,
+   "ambiguous": [
+    "fseek",
+    "fseeko"
+   ]
+  },
+  {
+   "addr": 4402240,
+   "name": "fseeko",
+   "aliases": [
+    "fseeko",
+    "__fseeko"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 98,
+   "fixed": 82,
+   "confidence": 0.5,
+   "callgraph": 1.0,
+   "ambiguous": [
+    "fseek",
+    "fseeko"
+   ]
+  },
+  {
+   "addr": 4402352,
+   "name": "__ftello_unlocked",
+   "aliases": [
+    "__ftello_unlocked"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 103,
+   "fixed": 103,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4402464,
+   "name": "ftello",
+   "aliases": [
+    "ftello",
+    "__ftello"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 72,
+   "fixed": 56,
+   "confidence": 0.5,
+   "callgraph": 1.0,
+   "ambiguous": [
+    "ftell",
+    "ftello"
+   ]
+  },
+  {
+   "addr": 4402544,
+   "name": "ftello",
+   "aliases": [
+    "ftello",
+    "__ftello"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 72,
+   "fixed": 56,
+   "confidence": 0.5,
+   "callgraph": 1.0,
+   "ambiguous": [
+    "ftell",
+    "ftello"
+   ]
+  },
+  {
+   "addr": 4402624,
+   "name": "__do_orphaned_stdio_locks",
+   "aliases": [
+    "__do_orphaned_stdio_locks"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 56,
+   "fixed": 56,
+   "confidence": 0.875,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4402688,
+   "name": "__unlist_locked_file",
+   "aliases": [
+    "__unlist_locked_file"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 81,
+   "fixed": 81,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4402784,
+   "name": "__register_locked_file",
+   "aliases": [
+    "__register_locked_file"
+   ],
+   "lib": "musl-1.2.5-clang-O2",
+   "len": 56,
+   "fixed": 56,
+   "confidence": 0.875,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4402848,
+   "name": "ftrylockfile",
+   "aliases": [
+    "ftrylockfile"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 174,
+   "fixed": 174,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4403024,
+   "name": "funlockfile",
+   "aliases": [
+    "funlockfile"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 71,
+   "fixed": 63,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4403104,
+   "name": "__fwritex",
+   "aliases": [
+    "__fwritex"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 215,
+   "fixed": 207,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4403328,
+   "name": "fwrite",
+   "aliases": [
+    "fwrite",
+    "fwrite_unlocked"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 147,
+   "fixed": 131,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4403488,
+   "name": "locking_getc",
+   "aliases": [
+    "locking_getc"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 164,
+   "fixed": 156,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4403664,
+   "name": "fgetc",
+   "aliases": [
+    "fgetc"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 69,
+   "fixed": 61,
+   "confidence": 0.5,
+   "callgraph": 1.0,
+   "ambiguous": [
+    "fgetc",
+    "getc"
+   ]
+  },
+  {
+   "addr": 4403744,
+   "name": "getc_unlocked",
+   "aliases": [
+    "getc_unlocked",
+    "fgetc_unlocked",
+    "_IO_getc_unlocked"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 37,
+   "fixed": 33,
+   "confidence": 0.958,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4403792,
+   "name": "__ofl_lock",
+   "aliases": [
+    "__ofl_lock"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 28,
+   "fixed": 16,
+   "confidence": 0.25,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4403840,
+   "name": "pclose",
+   "aliases": [
+    "pclose"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 82,
+   "fixed": 74,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4403936,
+   "name": "popen",
+   "aliases": [
+    "popen"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 538,
+   "fixed": 455,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4404480,
+   "name": "remove",
+   "aliases": [
+    "remove"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 40,
+   "fixed": 36,
+   "confidence": 0.981,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4404528,
+   "name": "rename",
+   "aliases": [
+    "rename"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 24,
+   "fixed": 20,
+   "confidence": 0.856,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4404560,
+   "name": "setvbuf",
+   "aliases": [
+    "setvbuf"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 116,
+   "fixed": 116,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4404688,
+   "name": "strfmon",
+   "aliases": [
+    "strfmon"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 138,
+   "fixed": 134,
+   "confidence": 0.5,
+   "callgraph": null,
+   "ambiguous": [
+    "snprintf",
+    "strfmon",
+    "swprintf"
+   ]
+  },
+  {
+   "addr": 4404832,
+   "name": "tmpfile",
+   "aliases": [
+    "tmpfile"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 210,
+   "fixed": 190,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4405056,
+   "name": "ungetc",
+   "aliases": [
+    "ungetc"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 212,
+   "fixed": 192,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4405280,
+   "name": "pop_arg",
+   "aliases": [
+    "pop_arg"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 489,
+   "fixed": 485,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4405792,
+   "name": "pad.part.0",
+   "aliases": [
+    "pad.part.0"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 213,
+   "fixed": 201,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4406016,
+   "name": "fmt_fp",
+   "aliases": [
+    "fmt_fp"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 5507,
+   "fixed": 5311,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4411584,
+   "name": "printf_core",
+   "aliases": [
+    "printf_core"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 4207,
+   "fixed": 4063,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4415792,
+   "name": "vfprintf",
+   "aliases": [
+    "vfprintf"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 460,
+   "fixed": 432,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4416256,
+   "name": "sn_write",
+   "aliases": [
+    "sn_write"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 177,
+   "fixed": 169,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4416448,
+   "name": "vsnprintf",
+   "aliases": [
+    "vsnprintf"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 130,
+   "fixed": 118,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4416592,
+   "name": "strtox",
+   "aliases": [
+    "strtox"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 111,
+   "fixed": 103,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4416704,
+   "name": "strtof",
+   "aliases": [
+    "strtof"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 26,
+   "fixed": 22,
+   "confidence": 0.172,
+   "callgraph": null,
+   "ambiguous": [
+    "strtof",
+    "wcstof"
+   ]
+  },
+  {
+   "addr": 4416736,
+   "name": "strtod",
+   "aliases": [
+    "strtod"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 29,
+   "fixed": 25,
+   "confidence": 0.195,
+   "callgraph": null,
+   "ambiguous": [
+    "strtod",
+    "wcstod"
+   ]
+  },
+  {
+   "addr": 4416832,
+   "name": "memchr",
+   "aliases": [
+    "memchr"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 234,
+   "fixed": 234,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4417088,
+   "name": "memcmp",
+   "aliases": [
+    "memcmp"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 67,
+   "fixed": 67,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4417168,
+   "name": "strchr",
+   "aliases": [
+    "strchr"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 18,
+   "fixed": 14,
+   "confidence": 0.809,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4417216,
+   "name": "strchrnul",
+   "aliases": [
+    "strchrnul",
+    "__strchrnul"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 293,
+   "fixed": 289,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4417536,
+   "name": "strcmp",
+   "aliases": [
+    "strcmp"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 70,
+   "fixed": 70,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4417632,
+   "name": "strlen",
+   "aliases": [
+    "strlen"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 141,
+   "fixed": 141,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4417776,
+   "name": "strncmp",
+   "aliases": [
+    "strncmp"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 97,
+   "fixed": 97,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4417888,
+   "name": "strnlen",
+   "aliases": [
+    "strnlen"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 45,
+   "fixed": 41,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4417936,
+   "name": "strpbrk",
+   "aliases": [
+    "strpbrk"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 23,
+   "fixed": 19,
+   "confidence": 0.848,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4417984,
+   "name": "strspn",
+   "aliases": [
+    "strspn"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 191,
+   "fixed": 191,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4418176,
+   "name": "twoway_strstr",
+   "aliases": [
+    "twoway_strstr"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 902,
+   "fixed": 894,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4419104,
+   "name": "strstr",
+   "aliases": [
+    "strstr"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 352,
+   "fixed": 344,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4419744,
+   "name": "__randname",
+   "aliases": [
+    "__randname"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 135,
+   "fixed": 131,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4419888,
+   "name": "mkstemp",
+   "aliases": [
+    "mkstemp"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 9,
+   "fixed": 5,
+   "confidence": 0.739,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4420128,
+   "name": "__unlock",
+   "aliases": [
+    "__unlock"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 70,
+   "fixed": 70,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4420208,
+   "name": "sccp",
+   "aliases": [
+    "sccp",
+    "__syscall_cp_c"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 26,
+   "fixed": 26,
+   "confidence": 0.406,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4420256,
+   "name": "pthread_sigmask",
+   "aliases": [
+    "pthread_sigmask"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 54,
+   "fixed": 54,
+   "confidence": 0.844,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4420352,
+   "name": "clock",
+   "aliases": [
+    "clock"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 121,
+   "fixed": 117,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4420480,
+   "name": "cgt_init",
+   "aliases": [
+    "cgt_init"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 79,
+   "fixed": 63,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4420560,
+   "name": "clock_gettime",
+   "aliases": [
+    "clock_gettime",
+    "__clock_gettime"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 142,
+   "fixed": 130,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4420704,
+   "name": "difftime",
+   "aliases": [
+    "difftime"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 13,
+   "fixed": 13,
+   "confidence": 0.203,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4420720,
+   "name": "gmtime_r",
+   "aliases": [
+    "gmtime_r",
+    "__gmtime_r"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 63,
+   "fixed": 51,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4420784,
+   "name": "localtime_r",
+   "aliases": [
+    "localtime_r",
+    "__localtime_r"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 119,
+   "fixed": 107,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4420912,
+   "name": "mktime",
+   "aliases": [
+    "mktime"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 227,
+   "fixed": 207,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4421152,
+   "name": "week_num.isra.0",
+   "aliases": [
+    "week_num.isra.0"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 441,
+   "fixed": 441,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4421600,
+   "name": "strftime_l",
+   "aliases": [
+    "strftime_l",
+    "__strftime_l"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 1137,
+   "fixed": 1109,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4422752,
+   "name": "__strftime_fmt_1",
+   "aliases": [
+    "__strftime_fmt_1"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 1777,
+   "fixed": 1661,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4424544,
+   "name": "strftime",
+   "aliases": [
+    "strftime"
+   ],
+   "lib": "musl-1.2.5-clang-O2",
+   "len": 21,
+   "fixed": 17,
+   "confidence": 0.416,
+   "callgraph": 1.0,
+   "ambiguous": [
+    "strftime",
+    "wcsftime"
+   ]
+  },
+  {
+   "addr": 4424576,
+   "name": "time",
+   "aliases": [
+    "time"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 36,
+   "fixed": 32,
+   "confidence": 0.95,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4424640,
+   "name": "close",
+   "aliases": [
+    "close"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 61,
+   "fixed": 49,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4424704,
+   "name": "dup3",
+   "aliases": [
+    "dup3",
+    "__dup3"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 165,
+   "fixed": 153,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4424880,
+   "name": "isatty",
+   "aliases": [
+    "isatty"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 68,
+   "fixed": 60,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4424960,
+   "name": "pipe2",
+   "aliases": [
+    "pipe2"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 228,
+   "fixed": 212,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4425200,
+   "name": "__init_tp",
+   "aliases": [
+    "__init_tp"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 136,
+   "fixed": 116,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4425344,
+   "name": "__copy_tls",
+   "aliases": [
+    "__copy_tls"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 137,
+   "fixed": 117,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4425488,
+   "name": "static_init_tls",
+   "aliases": [
+    "static_init_tls",
+    "__init_tls"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 562,
+   "fixed": 463,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4426064,
+   "name": "_Exit",
+   "aliases": [
+    "_Exit"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 23,
+   "fixed": 23,
+   "confidence": 0.359,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4426096,
+   "name": "fcntl",
+   "aliases": [
+    "fcntl"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 359,
+   "fixed": 339,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4426464,
+   "name": "scanexp",
+   "aliases": [
+    "scanexp"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 498,
+   "fixed": 478,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4427008,
+   "name": "decfloat",
+   "aliases": [
+    "decfloat"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 3033,
+   "fixed": 2909,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4430080,
+   "name": "__floatscan",
+   "aliases": [
+    "__floatscan"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 2407,
+   "fixed": 2263,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4432496,
+   "name": "__shlim",
+   "aliases": [
+    "__shlim"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 58,
+   "fixed": 58,
+   "confidence": 0.906,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4432560,
+   "name": "__shgetc",
+   "aliases": [
+    "__shgetc"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 191,
+   "fixed": 187,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4432752,
+   "name": "__syscall_ret",
+   "aliases": [
+    "__syscall_ret"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 51,
+   "fixed": 47,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4432832,
+   "name": "__vdsosym",
+   "aliases": [
+    "__vdsosym"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 742,
+   "fixed": 730,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4433584,
+   "name": "nl_langinfo_l",
+   "aliases": [
+    "nl_langinfo_l",
+    "__nl_langinfo_l"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 336,
+   "fixed": 300,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4433920,
+   "name": "nl_langinfo",
+   "aliases": [
+    "nl_langinfo",
+    "__nl_langinfo"
+   ],
+   "lib": "musl-1.2.5-clang-O2",
+   "len": 21,
+   "fixed": 17,
+   "confidence": 0.416,
+   "callgraph": 1.0,
+   "ambiguous": [
+    "nl_langinfo",
+    "strerror"
+   ]
+  },
+  {
+   "addr": 4433952,
+   "name": "__lctrans_impl",
+   "aliases": [
+    "__lctrans_impl"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 45,
+   "fixed": 41,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4434000,
+   "name": "__get_locale",
+   "aliases": [
+    "__get_locale"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 764,
+   "fixed": 640,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4434768,
+   "name": "__simple_malloc",
+   "aliases": [
+    "__simple_malloc",
+    "__libc_malloc_impl"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 702,
+   "fixed": 594,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4435504,
+   "name": "__libc_realloc",
+   "aliases": [
+    "__libc_realloc"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 1193,
+   "fixed": 1149,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4436704,
+   "name": "__cos",
+   "aliases": [
+    "__cos"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 157,
+   "fixed": 125,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4436864,
+   "name": "__expo2",
+   "aliases": [
+    "__expo2"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 58,
+   "fixed": 46,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4436928,
+   "name": "__fpclassifyl",
+   "aliases": [
+    "__fpclassifyl"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 77,
+   "fixed": 77,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4437008,
+   "name": "__math_divzero",
+   "aliases": [
+    "__math_divzero"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 41,
+   "fixed": 33,
+   "confidence": 0.516,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4437072,
+   "name": "__math_oflow",
+   "aliases": [
+    "__math_oflow"
+   ],
+   "lib": "musl-1.2.5-clang-O2",
+   "len": 13,
+   "fixed": 5,
+   "confidence": 0.37,
+   "callgraph": 1.0,
+   "ambiguous": [
+    "__math_oflow",
+    "__math_uflow"
+   ]
+  },
+  {
+   "addr": 4437088,
+   "name": "__math_oflow",
+   "aliases": [
+    "__math_oflow"
+   ],
+   "lib": "musl-1.2.5-clang-O2",
+   "len": 13,
+   "fixed": 5,
+   "confidence": 0.37,
+   "callgraph": 1.0,
+   "ambiguous": [
+    "__math_oflow",
+    "__math_uflow"
+   ]
+  },
+  {
+   "addr": 4437104,
+   "name": "__math_xflow",
+   "aliases": [
+    "__math_xflow"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 33,
+   "fixed": 29,
+   "confidence": 0.453,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4437152,
+   "name": "__rem_pio2",
+   "aliases": [
+    "__rem_pio2"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 1231,
+   "fixed": 1107,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4438400,
+   "name": "__rem_pio2_large",
+   "aliases": [
+    "__rem_pio2_large"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 2842,
+   "fixed": 2706,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4441248,
+   "name": "__signbitl",
+   "aliases": [
+    "__signbitl"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 13,
+   "fixed": 13,
+   "confidence": 0.203,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4441264,
+   "name": "__sin",
+   "aliases": [
+    "__sin"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 169,
+   "fixed": 137,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4441440,
+   "name": "__tan",
+   "aliases": [
+    "__tan"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 474,
+   "fixed": 398,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4441920,
+   "name": "atan",
+   "aliases": [
+    "atan"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 606,
+   "fixed": 510,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4442528,
+   "name": "copysignl",
+   "aliases": [
+    "copysignl"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 47,
+   "fixed": 47,
+   "confidence": 0.734,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4442576,
+   "name": "floor",
+   "aliases": [
+    "floor"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 171,
+   "fixed": 159,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4442752,
+   "name": "frexpl",
+   "aliases": [
+    "frexpl",
+    "frexpl.localalias"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 154,
+   "fixed": 150,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4442912,
+   "name": "scalbnl",
+   "aliases": [
+    "scalbnl"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 146,
+   "fixed": 138,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4443088,
+   "name": "fmodl",
+   "aliases": [
+    "fmodl"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 28,
+   "fixed": 28,
+   "confidence": 0.438,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4443136,
+   "name": "mremap",
+   "aliases": [
+    "mremap",
+    "__mremap"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 168,
+   "fixed": 156,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4443312,
+   "name": "wctomb",
+   "aliases": [
+    "wctomb"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 27,
+   "fixed": 23,
+   "confidence": 0.88,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4443344,
+   "name": "child",
+   "aliases": [
+    "child"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 1008,
+   "fixed": 957,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4444352,
+   "name": "posix_spawn",
+   "aliases": [
+    "posix_spawn"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 443,
+   "fixed": 379,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4444800,
+   "name": "posix_spawn_file_actions_addclose",
+   "aliases": [
+    "posix_spawn_file_actions_addclose"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 103,
+   "fixed": 99,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4444912,
+   "name": "posix_spawn_file_actions_adddup2",
+   "aliases": [
+    "posix_spawn_file_actions_adddup2"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 111,
+   "fixed": 107,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4445024,
+   "name": "posix_spawn_file_actions_destroy",
+   "aliases": [
+    "posix_spawn_file_actions_destroy"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 36,
+   "fixed": 32,
+   "confidence": 0.95,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4445120,
+   "name": "posix_spawnattr_setflags",
+   "aliases": [
+    "posix_spawnattr_setflags"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 21,
+   "fixed": 21,
+   "confidence": 0.328,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4445152,
+   "name": "posix_spawnattr_setsigdefault",
+   "aliases": [
+    "posix_spawnattr_setsigdefault"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 74,
+   "fixed": 74,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4445232,
+   "name": "posix_spawnattr_setsigmask",
+   "aliases": [
+    "posix_spawnattr_setsigmask"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 98,
+   "fixed": 98,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4445344,
+   "name": "sigismember",
+   "aliases": [
+    "sigismember"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 20,
+   "fixed": 20,
+   "confidence": 0.312,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4445376,
+   "name": "fdopen",
+   "aliases": [
+    "fdopen",
+    "__fdopen"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 422,
+   "fixed": 370,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4445808,
+   "name": "__fmodeflags",
+   "aliases": [
+    "__fmodeflags"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 155,
+   "fixed": 143,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4445968,
+   "name": "__lockfile",
+   "aliases": [
+    "__lockfile"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 200,
+   "fixed": 200,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4446176,
+   "name": "__unlockfile",
+   "aliases": [
+    "__unlockfile"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 67,
+   "fixed": 67,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4446256,
+   "name": "__overflow",
+   "aliases": [
+    "__overflow"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 119,
+   "fixed": 115,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4446400,
+   "name": "__stdio_close",
+   "aliases": [
+    "__stdio_close"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 35,
+   "fixed": 27,
+   "confidence": 0.911,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4446448,
+   "name": "__stdio_read",
+   "aliases": [
+    "__stdio_read"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 219,
+   "fixed": 211,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4446672,
+   "name": "__stdio_seek",
+   "aliases": [
+    "__stdio_seek"
+   ],
+   "lib": "musl-1.2.5-clang-O2",
+   "len": 8,
+   "fixed": 4,
+   "confidence": 0.731,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4446688,
+   "name": "__stdio_write",
+   "aliases": [
+    "__stdio_write"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 260,
+   "fixed": 256,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4447056,
+   "name": "__toread",
+   "aliases": [
+    "__toread"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 108,
+   "fixed": 108,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4447184,
+   "name": "__towrite",
+   "aliases": [
+    "__towrite"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 83,
+   "fixed": 83,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4447296,
+   "name": "__uflow",
+   "aliases": [
+    "__uflow"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 63,
+   "fixed": 59,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4447360,
+   "name": "__ofl_add",
+   "aliases": [
+    "__ofl_add"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 38,
+   "fixed": 30,
+   "confidence": 0.934,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4447408,
+   "name": "strtoull",
+   "aliases": [
+    "strtoull",
+    "__strtoull_internal"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 118,
+   "fixed": 110,
+   "confidence": 0.5,
+   "callgraph": 1.0,
+   "ambiguous": [
+    "strtoul",
+    "strtoull"
+   ]
+  },
+  {
+   "addr": 4447536,
+   "name": "strtoll",
+   "aliases": [
+    "strtoll",
+    "__strtoll_internal"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 121,
+   "fixed": 113,
+   "confidence": 0.5,
+   "callgraph": 1.0,
+   "ambiguous": [
+    "strtol",
+    "strtoll"
+   ]
+  },
+  {
+   "addr": 4447664,
+   "name": "strtoull",
+   "aliases": [
+    "strtoull",
+    "__strtoull_internal"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 118,
+   "fixed": 110,
+   "confidence": 0.5,
+   "callgraph": 1.0,
+   "ambiguous": [
+    "strtoul",
+    "strtoull"
+   ]
+  },
+  {
+   "addr": 4447792,
+   "name": "strtoll",
+   "aliases": [
+    "strtoll",
+    "__strtoll_internal"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 121,
+   "fixed": 113,
+   "confidence": 0.5,
+   "callgraph": 1.0,
+   "ambiguous": [
+    "strtol",
+    "strtoll"
+   ]
+  },
+  {
+   "addr": 4447968,
+   "name": "strcspn",
+   "aliases": [
+    "strcspn"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 207,
+   "fixed": 199,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4448176,
+   "name": "mkostemps",
+   "aliases": [
+    "mkostemps",
+    "__mkostemps"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 196,
+   "fixed": 164,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4448384,
+   "name": "pthread_setcancelstate",
+   "aliases": [
+    "pthread_setcancelstate",
+    "__pthread_setcancelstate"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 37,
+   "fixed": 37,
+   "confidence": 0.578,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4448496,
+   "name": "__map_file",
+   "aliases": [
+    "__map_file"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 163,
+   "fixed": 151,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4448672,
+   "name": "__secs_to_tm",
+   "aliases": [
+    "__secs_to_tm"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 721,
+   "fixed": 717,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4449408,
+   "name": "__tm_to_secs",
+   "aliases": [
+    "__tm_to_secs"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 168,
+   "fixed": 160,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4449600,
+   "name": "getoff",
+   "aliases": [
+    "getoff"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 376,
+   "fixed": 376,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4449984,
+   "name": "getrule",
+   "aliases": [
+    "getrule"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 398,
+   "fixed": 394,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4450432,
+   "name": "getname",
+   "aliases": [
+    "getname"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 245,
+   "fixed": 245,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4450688,
+   "name": "rule_to_secs",
+   "aliases": [
+    "rule_to_secs"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 329,
+   "fixed": 321,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4451040,
+   "name": "do_tzset",
+   "aliases": [
+    "do_tzset"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 1765,
+   "fixed": 1428,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4452832,
+   "name": "__secs_to_zone",
+   "aliases": [
+    "__secs_to_zone"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 1086,
+   "fixed": 960,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4453920,
+   "name": "tzset",
+   "aliases": [
+    "tzset",
+    "__tzset"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 32,
+   "fixed": 16,
+   "confidence": 0.825,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4453952,
+   "name": "__tm_to_tzname",
+   "aliases": [
+    "__tm_to_tzname"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 137,
+   "fixed": 90,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4454096,
+   "name": "__year_to_secs",
+   "aliases": [
+    "__year_to_secs"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 329,
+   "fixed": 329,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4454432,
+   "name": "_exit",
+   "aliases": [
+    "_exit"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 9,
+   "fixed": 5,
+   "confidence": 0.37,
+   "callgraph": 1.0,
+   "ambiguous": [
+    "_exit",
+    "siglongjmp"
+   ]
+  },
+  {
+   "addr": 4454448,
+   "name": "lseek",
+   "aliases": [
+    "lseek",
+    "__lseek"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 21,
+   "fixed": 17,
+   "confidence": 0.833,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4454480,
+   "name": "pipe",
+   "aliases": [
+    "pipe"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 24,
+   "fixed": 20,
+   "confidence": 0.856,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4454512,
+   "name": "read",
+   "aliases": [
+    "read"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 43,
+   "fixed": 35,
+   "confidence": 0.973,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4454560,
+   "name": "open",
+   "aliases": [
+    "open"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 146,
+   "fixed": 138,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4454720,
+   "name": "__intscan",
+   "aliases": [
+    "__intscan"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 1613,
+   "fixed": 1525,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4456336,
+   "name": "__mo_lookup",
+   "aliases": [
+    "__mo_lookup"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 412,
+   "fixed": 408,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4456752,
+   "name": "wcrtomb",
+   "aliases": [
+    "wcrtomb"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 315,
+   "fixed": 307,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4457072,
+   "name": "execve",
+   "aliases": [
+    "execve"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 24,
+   "fixed": 20,
+   "confidence": 0.856,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4457104,
+   "name": "fstat",
+   "aliases": [
+    "fstat",
+    "__fstat"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 53,
+   "fixed": 41,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4457168,
+   "name": "fstatat",
+   "aliases": [
+    "fstatat",
+    "__fstatat"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 473,
+   "fixed": 465,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4457648,
+   "name": "close_file",
+   "aliases": [
+    "close_file"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 105,
+   "fixed": 101,
+   "confidence": 1.0,
+   "callgraph": 1.0,
+   "ambiguous": null
+  },
+  {
+   "addr": 4457840,
+   "name": "__month_to_secs",
+   "aliases": [
+    "__month_to_secs"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 36,
+   "fixed": 32,
+   "confidence": 0.5,
+   "callgraph": null,
+   "ambiguous": null
+  },
+  {
+   "addr": 4457920,
+   "name": "__procfdname",
+   "aliases": [
+    "__procfdname"
+   ],
+   "lib": "musl-1.2.5-gcc-O2",
+   "len": 254,
+   "fixed": 250,
+   "confidence": 1.0,
+   "callgraph": null,
+   "ambiguous": null
+  }
+ ],
+ "ghidra": {
+  "before": {
+   "total": 961,
+   "named": 13
+  },
+  "applied": {
+   "applied": 236,
+   "created": 16,
+   "failed": 0
+  },
+  "after": {
+   "total": 977,
+   "named": 249
+  }
+ }
+}

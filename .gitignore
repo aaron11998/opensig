@@ -1,0 +1,6 @@
+.venv/
+build/
+bench/src/
+bench/lua-*
+!bench/*.json
+__pycache__/
