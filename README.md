@@ -4,7 +4,6 @@
 
 opensig recognises glibc/musl functions in stripped ELF binaries and names them in [Ghidra](https://ghidra-sre.org/) — no IDA FLIRT, Lumina, Binary Ninja, or other proprietary signature data involved. Signatures are built only from open-source code we compile ourselves, or from distro `.a` archives.
 
-[![CI](https://github.com/aaron11998/opensig/actions/workflows/ci.yml/badge.svg)](https://github.com/aaron11998/opensig/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Release](https://img.shields.io/github/v/release/aaron11998/opensig)](https://github.com/aaron11998/opensig/releases)
 
