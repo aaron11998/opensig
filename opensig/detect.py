@@ -11,7 +11,8 @@ MARKERS = {
 
 
 def detect(path):
-    data = open(path, "rb").read()
+    with open(path, "rb") as _fh:
+        data = _fh.read()
     found = {k: sum(bool(re.search(p, data)) for p in v) for k, v in MARKERS.items()}
     info = {"runtimes": [k for k, v in found.items() if v], "scores": found}
     with open(path, "rb") as fh:
